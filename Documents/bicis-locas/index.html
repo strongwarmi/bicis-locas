@@ -21,25 +21,19 @@
             Bicis Locas
           </h2>
           <div class="name-container input-box">
-            <label for="name" class="sr-only">Nombre</label>
-            <input type="text" id="name" class="form-control"
-            placeholder="Ingrese su nombre">
+            <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre" autofocus="">
+            <label id= "nombre"></label>
           </div>
           <div class="lastname-container input-box">
-            <label for="lastname" class="sr-only">Apellido</label>
-            <input type="text" id="lastname" class="form-control"
-            placeholder="Ingrese su apellido">
+            <input type="text" id="lastname" class="form-control" placeholder="Ingrese su apellido">
+            <label id="apellido"></label>
           </div>
           <div class="email-container input-box">
-            <label for="inputEmail" class="sr-only">
-              Correo Electrónico
-            </label>
-            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" autofocus="">
+            <input type="email" id="inputemail" class="form-control" placeholder="Ingrese su correo electrónico">
+            <label id="email" class="sr-only"></label>
           </div>
           <div class="form-group">
-            <label for="inputPassword" class="sr-only">
-              Contraseña
-            </label>
+            <label for="inputPassword" class="sr-only"></label>
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
           </div>
           <div class="form-group">
@@ -61,9 +55,9 @@
               <span>Deseo recibir información vía email</span>
             </label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
+          <button class="btn btn-lg btn-primary btn-block submit-btn" onclick ="validateForm();" type="submit">Registrar</button>
         </form>
-      </div>  
+      </div>
     </section>
     <!-- /container -->
     <script type='text/javascript' src='js/main.js'></script>
